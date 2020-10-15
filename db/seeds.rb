@@ -9,7 +9,7 @@
 
 
 
-c1 = Character.create(name: "John", story: "Manager")
+c1 = Character.create(name: "John", story: "Manager at Dunder Mifflin")
 c2 = Character.create(name: "Dahlia", story: "Artist")
 c3 = Character.create(name: "Jamie", story: "Mom")
 c4 = Character.create(name: "Jackie", story: "Engineer")
