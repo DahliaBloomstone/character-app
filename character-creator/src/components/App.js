@@ -1,4 +1,7 @@
 import React, {Component} from 'react'
+import { connect } from 'react-redux';
+import { fetchCharacters } from './actions/index.js'
+
 import React from "react"
 import './App.css'
 

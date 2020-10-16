@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios'
 import './App.css';
 
+//import React, { Component } from 'react';
+//import { connect } from 'react-redux';
+
 
 function App() {
   const [image, setImage] = useState('')
