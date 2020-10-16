@@ -1,32 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import { createStore, applyMiddleware } from 'redux';
-
-//import charactersReducer from './reducers/charactersReducer.js';
-
-//const store = createStore(charactersReducer, applyMiddleware(thunk))
-
+import { Provider } from 'react-redux';
 import './index.css';
-import App from './App';
-//import renderRoutes from './routes'
-
-//import * as serviceWorker from './serviceWorker';
-//import { Provider } from 'react-redux'
-//import store from './store.js'
-//import { BrowserRouter } from 'react-router-dom'
+import App from './containers/App';
+import registerServiceWorker from './registerServiceWorker';
+import store from './store.js'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
-
-
-//ReactDOM.render(
-  //<Provider store={store}>
- //   <App />
- // </Provider>,
- // document.getElementById('root')
-//);
+registerServiceWorker();
