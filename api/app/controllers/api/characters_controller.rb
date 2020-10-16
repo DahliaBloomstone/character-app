@@ -1,5 +1,6 @@
 class CharactersController < ApplicationController 
-    
+  before_action :current_character, only: [:show, :update, :destroy]
+
     def index 
         @characters = Character.all 
         render json: @characters, status: 200 
