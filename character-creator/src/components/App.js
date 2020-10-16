@@ -1,26 +1,33 @@
-import React, {Component} from 'react'
-import { connect } from 'react-redux';
-import { fetchCharacters } from './actions/index.js'
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './App.css';
+import Characters from './Characters';
+import Home from '../components/Home';
+import About from '../components/About';
+import GreetingCharacters from '../components/GreetingCharacters';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
-import React from "react"
-import './App.css'
 
-import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import HelloWorld from './HelloWorld'
 
-class App extends React.Component {
-    render(){
-        return(
-            <BrowserRouter>
-            <Switch>
-            <div className="container app-container">
-                {this.props.children}
-            </div>
-            </Switch>
-            </BrowserRouter>
-            
-        )
-    }
+class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <Router>
+          <div>
+            <Navbar />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/characters" component={Characters} />
+            <Route exact path="/greeting-characters" component={GreetingCharacters} />
+            <Route exact path="/about" component={About} />
+          </div>
+        </Router>
+        <Footer />
+      </div>
+    );
+  }
 }
 
-export default App
+export default App;
