@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import characters from './reducers/characters';
-import characterFormData from './reducers/dogFormData';
+import characterFormData from './reducers/characterFormData';
 
 const reducers = combineReducers({
   characters,
