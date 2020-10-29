@@ -1,6 +1,7 @@
 import { resetCharacterForm } from './characterForm';
 
 const API_URL = process.env.REACT_APP_API_URL;
+
 export const setCharacters = characters => {
   return {
     type: 'GET_CHARACTERS_SUCCESS',
