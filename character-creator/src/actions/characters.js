@@ -52,7 +52,7 @@ export const getCharacters = () => {
   }
 }
 
-export const createCharacters = character => {
+export const createCharacter = character => {
   return dispatch => {
     return fetch(`${API_URL}/characters`, {
       method: 'POST',
