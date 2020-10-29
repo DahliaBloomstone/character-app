@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Dogs from './Dogs';
+import Characters from './Characters';
 import Home from '../components/Home';
 import About from '../components/About';
 import GreetingCharacters from '../components/GreetingCharacters';

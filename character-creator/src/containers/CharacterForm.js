@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { updateCharacterFormData } from '../actions/CharacterForm';
+import { updateCharacterFormData } from '../actions/characterForm';
 import { createCharacter } from '../actions/characters';
 
 class CharacterForm extends Component {
