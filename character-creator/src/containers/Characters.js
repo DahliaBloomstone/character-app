@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Characters.css';
-import CharacterCard from './CharacterCard';
+import CharacterCard from '../components/CharacterCard';
 import CharacterForm from './CharacterForm';
 import { getCharacters } from '../actions/characters';
 

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Characters from './Characters';
-import Home from './Home';
-import About from './About';
-import GreetingCharacters from './GreetingCharacters';
-import Footer from './Footer';
-import Navbar from './Navbar';
-
+import Dogs from './Dogs';
+import Home from '../components/Home';
+import About from '../components/About';
+import GreetingCharacters from '../components/GreetingCharacters';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
 
 class App extends Component {
