@@ -2,6 +2,7 @@ import { resetCharacterForm } from './characterForm';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
+
 export const setCharacters = characters => {
   return {
     type: 'GET_CHARACTERS_SUCCESS',
@@ -34,10 +35,12 @@ export function deleteCharacter(character) {
   return dispatch => {
     dispatch(removeCharacter(character));
     return fetch(`${API_URL}/characters/${character.id}`, {
-      method: 'DELETE',
+      method: "DELETE",
       body: JSON.stringify(character),
       headers: {
         'Content-Type': 'application/json',
+        "Accept": 'application/json'
+
       }
      })
      .then(res => console.log(res))
@@ -52,12 +55,14 @@ export const getCharacters = () => {
   }
 }
 
+
 export const createCharacter = character => {
   return dispatch => {
-    return fetch(`${API_URL}/characters`, {
-      method: 'POST',
+    return fetch(`${API_URL}/characters/`, {
+      method: "POST",
       headers: {
         'Content-Type': 'application/json'
+        
       },
       body: JSON.stringify(character)
     })

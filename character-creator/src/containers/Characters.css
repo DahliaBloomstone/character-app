@@ -4,6 +4,8 @@
     float: left;
     padding-right:20px;
     margin-bottom: 30px;
+    font-family: Chalkduster, fantasy;
+    color: pink;
   }
   
   .Nav li a {
@@ -27,6 +29,7 @@
     text-align: center;
     max-width: 980px;
     margin: auto;
+    color: pink;
   }
   
   .CharacterCard {
@@ -49,6 +52,7 @@
   .CharacterName {
     text-transform: uppercase;
     font-size: 1.2em;
+    font-family: Chalkduster, fantasy;
   }
   
   .CharacterImage {
@@ -71,6 +75,8 @@
     border: 1px solid #dddddd;
     background-color: #ffffff;
     clear: both;
+    font-family: Chalkduster, fantasy;
+
   }
   
   .btn-delete {
