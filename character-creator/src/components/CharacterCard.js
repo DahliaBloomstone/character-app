@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteCharacter, likeCharacter } from '../actions/characters';
+//presentational components 
 
 class CharacterCard extends Component {
 

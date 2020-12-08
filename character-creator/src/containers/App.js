@@ -8,8 +8,8 @@ import GreetingCharacters from '../components/GreetingCharacters';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
-
-class App extends Component {
+//render component, displays retrieved data in our app
+class App extends React.Component {
 
   render() {
     return (

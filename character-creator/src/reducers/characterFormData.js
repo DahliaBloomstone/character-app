@@ -1,3 +1,6 @@
+//reducers are pure functions determined by input values 
+//to update, passing action and old state to our reducer 
+
 const initialState= {
     name: '',
     location: '',
@@ -6,6 +9,9 @@ const initialState= {
     background_info: ''
   }
   
+  //switch case: action.type is the info we are switching
+  //tells the function what to do 
+  //returns info passed into the function
   export default (state = initialState, action) => {
   
       switch(action.type) {

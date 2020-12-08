@@ -1,3 +1,5 @@
+//presentational components 
+
 import React from 'react';
 
 const About = () => {

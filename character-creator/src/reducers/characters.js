@@ -1,3 +1,7 @@
+
+//set up initial state 
+//set up action creator type 
+//switch case 
 export default (state=[], action) => {
 
     switch(action.type) {

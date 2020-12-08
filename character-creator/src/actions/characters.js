@@ -1,3 +1,5 @@
+//action.type actions need a type property 
+//
 import { resetCharacterForm } from './characterForm';
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -47,6 +49,7 @@ export function deleteCharacter(character) {
   }
 }
 
+//fetch request 
 export const getCharacters = () => {
   return dispatch => {
     return fetch(`${API_URL}/characters`)
