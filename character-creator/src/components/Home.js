@@ -12,7 +12,7 @@ const Home = () => {
     
       <p>&#127774;</p>
 
-      <h6> Use https://github.com/DahliaBloomstone/Character-creator to generate AI photos for random character images. </h6>
+      <h5> Use https://github.com/DahliaBloomstone/Character-creator to generate AI photos for random character images. </h5>
 
       <p>&#127773;</p>
 

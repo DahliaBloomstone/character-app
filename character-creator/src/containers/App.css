@@ -2,9 +2,11 @@
   text-align: center;
   max-width: 650px;
   margin: auto;
-  font-family: Chalkduster, fantasy;
-  text-indent: 50px;
+  font-family: "Times New Roman", Times, serif;
+  text-indent: 40px;
   color: black;
-  background-image: url("https://miro.medium.com/max/1400/1*h8gLX9aXdgViN0HdyQaP5g.png");
 }
 
+h1 {
+  font-size: 55px;
+}

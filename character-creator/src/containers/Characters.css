@@ -4,7 +4,7 @@
     float: left;
     padding-right:20px;
     margin-bottom: 30px;
-    font-family: Chalkduster, fantasy;
+    font-family: "Times New Roman", Times, serif;
     color: pink;
   }
   
@@ -51,8 +51,8 @@
   
   .CharacterName {
     text-transform: uppercase;
-    font-size: 1.2em;
-    font-family: Chalkduster, fantasy;
+    font-size: 1.5em;
+    font-family: "Times New Roman", Times, serif;
   }
   
   .CharacterImage {
