@@ -3,6 +3,9 @@ import { connect } from 'react-redux';
 import { updateCharacterFormData } from '../actions/characterForm';
 import { createCharacter } from '../actions/characters';
 
+//consumes global data 
+//connected to redux 
+
 class CharacterForm extends Component {
 
   handleOnChange = event => {

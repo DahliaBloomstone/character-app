@@ -9,8 +9,12 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 //render component, displays retrieved data in our app
+//first thought about what we wanted it to look like 
+//lay each component out, move them around and add css 
+//add routes 
 class App extends React.Component {
 
+  //literal navigation bar shows what we are looking at 
   render() {
     return (
       <div className="App">
@@ -28,8 +32,6 @@ class App extends React.Component {
     );
   }
 }
-
-
 
 
 export default App;

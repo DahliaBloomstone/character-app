@@ -7,6 +7,7 @@ import { getCharacters } from '../actions/characters';
 
 class Characters extends Component{
 
+  //used to call the action
   componentDidMount() {
     this.props.getCharacters()
   }
@@ -30,6 +31,9 @@ class Characters extends Component{
 
 };
 
+//selecting part of the data from the store that the connected component needs 
+//recieves entire store state 
+//returns an object of data this component needs 
 const mapStateToProps = (state) => {
   return ({
     characters: state.characters

@@ -6,6 +6,8 @@ import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store.js'
 
+//store must be provided
+//wrap my app with provider 
 ReactDOM.render(
   <Provider store={store}>
     <App />

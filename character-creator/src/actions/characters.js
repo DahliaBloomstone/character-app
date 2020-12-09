@@ -4,7 +4,7 @@ import { resetCharacterForm } from './characterForm';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
-
+//actions the user can perform, liking
 export const setCharacters = characters => {
   return {
     type: 'GET_CHARACTERS_SUCCESS',
@@ -26,6 +26,7 @@ export const addLike = character => {
   }
 }
 
+//user can remove character
 export function removeCharacter(character) {
   return {
     type: 'REMOVE_CHARACTER_SUCCESS',
@@ -49,7 +50,8 @@ export function deleteCharacter(character) {
   }
 }
 
-//fetch request 
+//fetch request -- async 
+//user can see characters 
 export const getCharacters = () => {
   return dispatch => {
     return fetch(`${API_URL}/characters`)
@@ -58,11 +60,11 @@ export const getCharacters = () => {
   }
 }
 
-
+//user can create a new character 
 export const createCharacter = character => {
   return dispatch => {
-    return fetch(`${API_URL}/characters/`, {
-      method: "POST",
+    return fetch(`${API_URL}/characters`, {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json'
         
@@ -77,6 +79,7 @@ export const createCharacter = character => {
   }
 }
 
+// user can like a character 
 export const likeCharacter = (character) => {
   return dispatch => {
     return fetch(`${API_URL}/characters/${character.id}`, {

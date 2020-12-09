@@ -3,6 +3,8 @@ import thunk from 'redux-thunk';
 import characters from './reducers/characters';
 import characterFormData from './reducers/characterFormData';
 
+//this is just a function
+//key value pairs, each property will point to one reducer 
 const reducers = combineReducers({
   characters,
   characterFormData
