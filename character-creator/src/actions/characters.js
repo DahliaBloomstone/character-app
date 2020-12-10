@@ -63,13 +63,12 @@ export const getCharacters = () => {
 //user can create a new character 
 export const createCharacter = character => {
   return dispatch => {
-    return fetch(`${API_URL}/characters`, {
+    return fetch(`${API_URL}/characters/`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
-        
       },
-      body: JSON.stringify(character)
+      body: JSON.stringify(character) // { character: { name: ""}}
     })
       .then(response => response.json())
       .then(character => {

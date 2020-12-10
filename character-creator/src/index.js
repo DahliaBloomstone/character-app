@@ -4,10 +4,11 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './containers/App';
 import registerServiceWorker from './registerServiceWorker';
-import store from './store.js'
+import store from './store.js';
 
 //store must be provided
 //wrap my app with provider 
+//access to everything in our app
 ReactDOM.render(
   <Provider store={store}>
     <App />

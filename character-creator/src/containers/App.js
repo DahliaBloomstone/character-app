@@ -12,7 +12,7 @@ import Navbar from '../components/Navbar';
 //first thought about what we wanted it to look like 
 //lay each component out, move them around and add css 
 //add routes 
-class App extends React.Component {
+class App extends Component {
 
   //literal navigation bar shows what we are looking at 
   render() {

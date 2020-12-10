@@ -5,6 +5,7 @@ import characterFormData from './reducers/characterFormData';
 
 //this is just a function
 //key value pairs, each property will point to one reducer 
+//literally combines reducers for our store, pass in each individual reducer (two)
 const reducers = combineReducers({
   characters,
   characterFormData

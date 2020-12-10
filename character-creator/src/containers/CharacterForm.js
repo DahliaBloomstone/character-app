@@ -18,7 +18,7 @@ class CharacterForm extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
-    this.props.createCharacter(this.props.CharacterFormData)
+    this.props.createCharacter(this.props.characterFormData)
   }
 
   render() {

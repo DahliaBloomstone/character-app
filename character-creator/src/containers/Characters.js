@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './Characters.css';
 import CharacterCard from '../components/CharacterCard';
-import CharacterForm from './CharacterForm';
+import CharacterForm from './CharacterForm'; //import action
 import { getCharacters } from '../actions/characters';
 
 class Characters extends Component{
