@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { updateCharacterFormData } from '../actions/characterForm';
 import { createCharacter } from '../actions/characters';
+import { updateCharacterFormData } from '../actions/characterForm';
 
 //consumes global data 
 //connected to redux 

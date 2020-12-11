@@ -6,8 +6,9 @@
     margin-bottom: 30px;
     font-family: "Proxima Nova";
     color: pink;
+
   }
-  
+
   .Nav li a {
     text-decoration: none;
   }
@@ -51,7 +52,7 @@
   
   .CharacterName {
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: "Times New Roman", Times, serif;
   }
   
@@ -70,13 +71,13 @@
   
   .CharacterForm {
     margin: auto;
-    width: 400px;
+    width: 600px;
     padding-bottom: 20px;
     border: 1px solid #dddddd;
     background-color: #ffffff;
     clear: both;
     font-family: Chalkduster, fantasy;
-
+    font-size: 1.8em;
   }
   
   .btn-delete {
@@ -106,7 +107,7 @@
     font-size: .75em;
   }
   
-  @media (max-width: 643px) {
+  @media (max-width: 640px) {
     .CharacterCard {
       float: none;
       margin-left: auto;
@@ -114,10 +115,28 @@
     }
   }
   
-  .About, .GreetingCharacters, .Home {
+  .About {
     margin: auto;
     clear: both;
     max-width:600px;
     padding: 0px 20px;
+    background-image: url(https://www.ideaspies.com/core/storage/uploads/images/2017/11/9F7B612A-9815-426E-AEEB-144CDE3BA679.gif);
   }
+  
+  .GreetingCharacters {
+    margin: auto;
+    clear: both;
+    max-width:600px;
+    padding: 0px 20px;
+    background-image: url(https://media3.giphy.com/media/3oKIP7ZeZN11vDwXEk/giphy.gif?cid=ecf05e47aj6omifc4t4iav6lan91k8f3xez42mzcgdyhbshq&rid=giphy.gifv); 
+  }
+
+  .Home {
+    margin: auto;
+    clear: both;
+    max-width:600px;
+    padding: 0px 20px;
+
+  }
+
   
