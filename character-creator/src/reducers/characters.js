@@ -1,5 +1,5 @@
+//redux step 3 after creating the store and actions.
 //reducers return new state based on action
-
 //set up initial state 
 //set up action creator type 
 //switch case 

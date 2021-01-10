@@ -1,3 +1,10 @@
+//importing modules 
+//thunk middleware: redux middleware. this extend's the store's abilities and lets you write async logic that interacts with the store.
+//syntax sugar for dispatching thunks or promises.
+//what are thunks? basically, a function that's returned by another. 
+//redux: actions, action creators, reducers, and middleware.
+//actions are just objects.
+//must applyMiddleware for thunk 
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import characters from './reducers/characters';

@@ -1,5 +1,7 @@
 //action.type actions need a type property 
-//
+//USING SERIALIZABLE DATA
+//USING CONVENTIONAL NAMING FOR REDUX GET_CHARACTERS_SUCCESS
+//fetching, making API calls 
 import { resetCharacterForm } from './characterForm';
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -52,6 +54,7 @@ export function deleteCharacter(character) {
 
 //fetch request -- async 
 //user can see characters 
+// npm install redux-thunk
 export const getCharacters = () => {
   return dispatch => {
     return fetch(`${API_URL}/characters`)
@@ -79,6 +82,7 @@ export const createCharacter = character => {
 }
 
 // user can like a character 
+
 export const likeCharacter = (character) => {
   return dispatch => {
     return fetch(`${API_URL}/characters/${character.id}`, {
@@ -95,3 +99,4 @@ export const likeCharacter = (character) => {
         })
   }
 }
+
