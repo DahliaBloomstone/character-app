@@ -1,6 +1,4 @@
 import React from 'react';
-//presentational components 
-
 const Footer = () => {
   return (
     <div className='Footer'>

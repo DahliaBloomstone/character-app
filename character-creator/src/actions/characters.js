@@ -1,12 +1,7 @@
-//action.type actions need a type property 
-//USING SERIALIZABLE DATA
-//USING CONVENTIONAL NAMING FOR REDUX GET_CHARACTERS_SUCCESS
-//fetching, making API calls 
 import { resetCharacterForm } from './characterForm';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
-//actions the user can perform, liking
 export const setCharacters = characters => {
   return {
     type: 'GET_CHARACTERS_SUCCESS',
@@ -28,13 +23,13 @@ export const addLike = character => {
   }
 }
 
-//user can remove character
 export function removeCharacter(character) {
   return {
     type: 'REMOVE_CHARACTER_SUCCESS',
     character
   }
 }
+
 
 export function deleteCharacter(character) {
   return dispatch => {
@@ -52,9 +47,6 @@ export function deleteCharacter(character) {
   }
 }
 
-//fetch request -- async 
-//user can see characters 
-// npm install redux-thunk
 export const getCharacters = () => {
   return dispatch => {
     return fetch(`${API_URL}/characters`)
@@ -63,7 +55,6 @@ export const getCharacters = () => {
   }
 }
 
-//user can create a new character 
 export const createCharacter = character => {
   return dispatch => {
     return fetch(`${API_URL}/characters/`, {
@@ -80,23 +71,3 @@ export const createCharacter = character => {
       })
   }
 }
-
-// user can like a character 
-
-export const likeCharacter = (character) => {
-  return dispatch => {
-    return fetch(`${API_URL}/characters/${character.id}`, {
-      method: "PATCH",
-      headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({like: character.like + 1})
-      })
-        .then(response => response.json())
-        .then(console.log("a"))
-        .then(character => {
-          dispatch(addLike(character))
-        })
-  }
-}
-

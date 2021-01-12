@@ -1,5 +1,4 @@
 import React from 'react';
-//presentational components 
 
 const Home = () => {
   return (
