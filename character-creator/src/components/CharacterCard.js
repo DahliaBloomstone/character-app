@@ -9,10 +9,6 @@ class CharacterCard extends Component {
   }
 
   likerFunction = () => {
-    console.log("Character Liked!")
-  }
-
-  likerFunction = () => {
     let newLike = this.state.count + 1
     this.setState({
       count: newLike
