@@ -29,7 +29,7 @@ To generate AI characters, visit this repo: https://github.com/DahliaBloomstone/
 ----------------------------------------------------------------------------------------------------------------------------
 
 
-The app utilizes a React frontend, Rails API backend, and stores data from 3rd-party APIs in the Rails API backend. This is the final project for the Flatiron School.
+The app utilizes a React frontend, Rails API backend, and stores data from 3rd-party APIs in the Rails API backend
 
 #Installation
 
